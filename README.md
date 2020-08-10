@@ -8,5 +8,5 @@ language, date, name or combination of all to maximize finding results.
 
 Technologies used:
 Backend: NodeJS, Express, Sequelize, Postgres and AWS
-Frontend: Javascript, React, Redux, Sass, Html
+Frontend: Javascript, React, Redux, Sass, Html.
 Website : https://whiteboard-coding.herokuapp.com
