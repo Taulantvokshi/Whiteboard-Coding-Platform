@@ -1,0 +1,132 @@
+.home_events {
+  grid-column: full-start/ full-end;
+  grid-row: 4 / 5;
+  width: 100%;
+  height: 100%;
+  //background: linear-gradient(-131deg, #f9637c 0%, #ff7933 100%);;
+  background-color: #f6f7f8;
+  display: flex;
+  align-items: center;
+
+  &-container {
+    padding: 3rem;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    grid-auto-rows: min-content;
+    justify-content: center;
+    grid-gap: 4rem;
+
+    &--cart {
+      box-shadow: 0px 0px 70px -55px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+      font-family: 'Varela', sans-serif;
+      width: 25rem;
+      height: 24rem;
+      background-color: white;
+      border: 1px solid #eae9e9;
+      @media only screen and (max-width: 478px) {
+        width: 25rem;
+        height: 22rem;
+      }
+
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+.cart_details {
+  padding-left: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 5rem 1fr;
+  @media only screen and (max-width: 37.5em) {
+    grid-gap: 0.1rem;
+  }
+
+  justify-content: center;
+  align-items: center;
+
+  &-h2 {
+    padding: 0.5rem;
+    font-size: 2rem !important;
+    border-bottom: 1px solid #eae9e9;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  &-display {
+    margin-top: 0.5rem;
+    grid-column: 1/-1;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--info {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      &--name {
+        font-size: 2rem;
+      }
+    }
+
+    &--image {
+      margin-right: 1.2rem;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 3px solid white;
+      &-i {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-directions {
+    margin-top: 1.5rem;
+    grid-column: 1/-1;
+
+    &--date {
+      color: #35b0ab;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &-h2 {
+    grid-column: 1/-1;
+    font-size: 1.3rem;
+    color: #35b0ab;
+  }
+}
+
+.cart_attendance {
+  border-top: 1px solid #eae9e9;
+  background-color: #f6f7f8;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-attendancePara {
+    font-size: 1rem;
+  }
+  &-btn {
+    width: 5rem;
+    height: 2.5rem;
+    background-color: white;
+    border: 2px solid #35b0ab;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+}

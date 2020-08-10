@@ -1,0 +1,123 @@
+//LOGIN--SIGN-UP COMPONENT
+.login {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    35deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(213, 222, 245, 0.587) 47%,
+    rgba(247, 247, 247, 0.5872) 100%
+  );
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    font-size: 1.3rem;
+    width: 38rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: white;
+
+    &--box {
+      width: 80%;
+    }
+    &--input {
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #d4dbf4;
+      height: 5rem;
+
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      &:focus {
+        outline: none;
+        background-color: white;
+      }
+      &::-webkit-input-placeholder {
+        background-color: white;
+      }
+    }
+    &--button {
+      border: none;
+      width: 55%;
+      height: 4rem;
+      margin: 1rem 0 2rem 0;
+
+      font-size: 1.1rem;
+      font-family: inherit;
+      color: white;
+      background-color: #ff8a5c;
+    }
+    &--info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    &--google {
+      font-size: 1rem;
+      text-decoration: none;
+    }
+  }
+  &__info {
+    font-size: 1.3rem;
+    width: 30rem;
+    height: 100%;
+    // background-color: blue;
+    &--image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  font-size: 1.3rem;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 2rem 4rem rgba(black, 0.2);
+  background-color: white;
+}
+
+.logo-text {
+  @media only screen and (max-width: 47.18em) {
+    margin: 0;
+  }
+  & > * {
+    @media only screen and (max-width: 37.5em) {
+      color: black;
+    }
+  }
+}
+
+//MODAL
+.guestButton {
+  height: 3rem;
+  width: 6rem;
+  background-color: #eae9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: inherit;
+  margin-top: -10px;
+}

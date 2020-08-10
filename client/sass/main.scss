@@ -1,0 +1,50 @@
+@import 'base';
+@import 'components';
+
+@import 'mixins';
+@import 'typoghraphy';
+@import 'footer';
+@import 'navigation';
+
+@import 'components/event';
+@import 'components/modal';
+@import 'components/autofill';
+
+//HomePage
+@import 'homePage/homeContainer';
+@import 'homePage/homeEvents';
+@import 'homePage/homeMap';
+@import 'homePage/homeFooter';
+@import 'homePage/homeVideo';
+@import 'homePage/homeReviews';
+@import 'homePage/homeGreetings';
+@import 'homePage/homeAuthor';
+//UserPage
+@import 'userPage/userContainer';
+@import 'userPage/userHeader';
+@import 'userPage/userToolbar';
+@import 'userPage/userEvents';
+@import 'userPage/userSchool';
+@import 'userPage/userJoinedEvents';
+//EventPage
+@import 'eventPage/eventContainer';
+@import 'eventPage/eventHeader';
+@import 'eventPage/eventAttendees';
+@import 'eventPage/eventInfo';
+@import 'eventPage/eventDetails';
+@import 'eventPage/eventComments';
+
+//Modals
+@import 'modals/responsiveMenu';
+@import 'modals/newEvent';
+@import 'modals/allEvents';
+@import 'modals/postEvent';
+
+// Settings
+@import 'settings/settingsContainer';
+@import 'settings/imageCroper';
+
+//external
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kanit|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap');

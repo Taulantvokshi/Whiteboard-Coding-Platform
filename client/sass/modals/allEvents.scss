@@ -1,0 +1,95 @@
+.events_modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.8);
+  z-index: 10000;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_container {
+    @media only screen and (max-width: 50em) {
+      width: 90%;
+    }
+    width: 40%;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: white;
+
+    &-info {
+      background-color: white;
+      height: 3rem;
+      position: relative;
+      & > * {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        color: blue;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.single_event {
+  padding: 0.5rem;
+  width: 60%;
+  height: 5rem;
+  border-radius: 10px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: 50em) {
+    width: 90%;
+  }
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (max-width: 50em) {
+      font-size: 0.8rem;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.allEventButton {
+  margin: 0;
+  width: 5rem;
+  height: 2.5rem;
+  background-color: white;
+  border: 2px solid #35b0ab;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #35b0ab;
+  transition: all 0.3s;
+  cursor: pointer;
+  @media only screen and (max-width: 50em) {
+    width: 3rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+.allEventButton:hover {
+  background-color: #35b0ab;
+  color: white;
+}

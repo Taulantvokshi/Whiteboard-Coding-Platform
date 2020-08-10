@@ -1,0 +1,13 @@
+.user_header {
+  width: 100%;
+  grid-column: full-start / full-end;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+  // @media only screen and (max-width: 52.4em) {
+  //  background-color: yellow;
+  //  }
+}

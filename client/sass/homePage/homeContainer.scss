@@ -1,0 +1,46 @@
+.home_container {
+  display: grid;
+
+  grid-template-rows:
+    minmax(72vh, min-content) minmax(15rem, min-content) minmax(
+      20rem,
+      min-content
+    )
+    minmax(60vh, min-content) minmax(20rem, min-content) minmax(
+      80vh,
+      min-content
+    )
+    min-content;
+  grid-template-columns:
+    [full-start] minmax(10px, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 140px) [col-end]
+    )
+    [center-end] minmax(10px, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows:
+      minmax(72vh, min-content) minmax(15rem, min-content) minmax(
+        17rem,
+        min-content
+      )
+      minmax(60vh, min-content) minmax(22rem, min-content) minmax(
+        80vh,
+        min-content
+      )
+      min-content;
+  }
+}
+
+.carosel-z {
+  grid-column: full-start/ full-end;
+  grid-row: 4 / 5;
+  background-color: #f6f7f8;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(min-content, 1fr));
+}
+.carosel-man {
+  grid-column: 1/-1;
+  width: 100%;
+  height: 30rem;
+}

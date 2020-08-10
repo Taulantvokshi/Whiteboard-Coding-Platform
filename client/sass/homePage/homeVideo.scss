@@ -1,0 +1,72 @@
+.home_video {
+  //background-color: orangered;
+  margin-top: 1rem;
+  grid-column: full-start / full-end;
+  @media only screen and (max-width: 37.5em) {
+    align-items: flex-start;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-intro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 40rem));
+    grid-auto-rows: min-content;
+    grid-row-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+
+    @media only screen and (max-width: 1139px) {
+      align-items: center;
+      justify-items: center;
+    }
+
+    &-text {
+      @media only screen and (max-width: 1139px) {
+        padding-top: 12rem;
+      }
+      @media only screen and (max-width: 751px) {
+        align-items: center;
+      }
+
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &-image {
+      width: 45rem;
+      height: 33rem;
+      @media only screen and (max-width: 642px) {
+        width: 39rem;
+        height: 28rem;
+      }
+      @media only screen and (max-width: 642px) {
+        width: 30rem;
+        height: 20rem;
+      }
+      @media only screen and (max-width: 407px) {
+        width: 27rem;
+        height: 18rem;
+      }
+
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.web-title {
+  font-family: 'Righteous', sans-serif;
+  color: black;
+}
+
+.web-subtitle {
+  color: black;
+  font-family: 'Kanit', sans-serif;
+}

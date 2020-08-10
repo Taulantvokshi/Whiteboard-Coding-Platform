@@ -1,0 +1,24 @@
+.user-container {
+  background-color: #f6f7f8;
+  display: grid;
+  grid-template-columns:
+    [full-start]minmax(1px, 1fr) [center-start] repeat(
+      11,
+      [col-start] minmax(min-content, 140px) [col-end]
+    )
+    [center-end] minmax(1px, 1fr) [full-end];
+
+  grid-template-rows: minmax(9rem, min-content) minmax(10rem, min-content);
+
+  @media only screen and (max-width: 1247px) {
+    grid-template-rows: minmax(9rem, min-content) minmax(10rem, min-content) minmax(
+        10rem,
+        min-content
+      );
+  }
+  // @media only screen and (max-width: 34.18em) {
+  //   grid-template-rows:
+  //   minmax(min-content, 9rem) minmax(min-content, 30rem)
+  //     minmax(min-content, 20rem) min-content;
+  // }
+}

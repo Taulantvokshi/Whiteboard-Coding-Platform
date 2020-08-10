@@ -1,0 +1,197 @@
+.user_events {
+  grid-row: 2/3;
+  padding: 5rem 4rem;
+  grid-column: col-start 1 / col-end 6;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, min-content));
+  grid-gap: 3rem;
+  justify-content: start;
+  align-content: start;
+
+  @media only screen and (max-width: 1286px) {
+    grid-column: center-start / center-end;
+    grid-row: 2/3;
+    padding-left: 3;
+    padding-right: 3;
+  }
+  @media only screen and (max-width: 1067px) {
+    align-items: center;
+    justify-content: center;
+    padding-left: 2;
+    padding-right: 2;
+  }
+  @media only screen and (max-width: 34.18em) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__event {
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(219, 219, 219, 1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(219, 219, 219, 1);
+    box-shadow: 0px 0px 5px 1px rgba(219, 219, 219, 1);
+
+    width: 24rem;
+    height: 21rem;
+    background-color: white;
+    border: 1px solid #eae9e9;
+    border-radius: 3px;
+    overflow: hidden;
+    align-self: start;
+
+    @media only screen and (max-width: 34.18em) {
+      width: 23rem;
+    }
+
+    &-language {
+      //border-bottom: 2px solid #f6f7f8;
+      border-bottom: 1px solid #eae9e9;
+      font-family: 'Kanit', sans-serif;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      & > h2 {
+        color: gray;
+        font-size: 1.2rem;
+      }
+    }
+    &-description {
+      padding: 0.8rem;
+
+      &--name {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 1rem;
+        & > h3 {
+          font-family: 'Kanit', sans-serif;
+          font-size: 1.5rem;
+        }
+      }
+      &--date,
+      &--location {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        & > * {
+          margin-right: 1rem;
+          margin-bottom: 0.9rem;
+        }
+      }
+
+      &--attend {
+        background: linear-gradient(
+          90deg,
+          rgba(246, 247, 248, 1) 18%,
+          rgba(255, 255, 255, 0.88) 74%
+        );
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-attendies {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          :not(:last-child) {
+            margin-right: -12px;
+          }
+          &-image {
+            box-sizing: content-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.7rem;
+            height: 2.7rem;
+            border-radius: 50%;
+            border: 2px solid white;
+
+            box-shadow: 0 0.4rem 0.5rem rgba(black, 0.1);
+            & > * {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      &--fullbtn,
+      &--btn {
+        margin: 0;
+        width: 8rem;
+        height: 3rem;
+        background-color: #eae9e9;
+        border-radius: 2px;
+        font-size: 1rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        transition: all 0.3s;
+        cursor: pointer;
+        // @media only screen and (max-width: 34.18em) {
+        //   width: 7rem;
+        //   height: 3.5rem;
+        //}
+        &:hover {
+          background: linear-gradient(-131deg, #f9637c 0%, #ff7933 100%);
+          color: white;
+        }
+      }
+      &--fullbtn {
+        color: white !important;
+        background: linear-gradient(
+          -131deg,
+          #f9637c 0%,
+          #ff7933 100%
+        ) !important;
+      }
+    }
+  }
+}
+
+.noUser_events {
+  align-self: center;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: center-start / col-end 6;
+  grid-row: 2 / 4;
+  & > * {
+    color: gray;
+  }
+}
+#attendance {
+  font-size: 0.8rem;
+}
+#attendance-text {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+#event-address-icon,
+#event-date-icon,
+#event-time-icon {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+#event-address,
+#event-date,
+#event-time {
+  font-family: 'Varela', sans-serif;
+
+  font-size: 0.9rem;
+  color: #696464;
+  color: black;
+  font-weight: 100;
+}

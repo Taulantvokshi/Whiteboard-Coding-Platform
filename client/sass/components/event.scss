@@ -1,0 +1,111 @@
+// .events {
+//   position: relative;
+//   padding: 0.5rem;
+//   width: 100%;
+//   height: 30rem;
+//   background-color: white;
+//   box-shadow: 0 2rem 4rem rgba(black, 0.1);
+//   border-radius: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+//   overflow-y: scroll;
+//   align-self: stretch;
+
+//   &__single {
+//     width: 100%;
+//     min-height: 7rem;
+//     background-color: white;
+//     border-radius: 10px;
+//     padding: 0.5rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 1rem;
+
+//     &-language {
+//       height: 100%;
+//       min-width: 25%;
+//       text-align: center;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       border-radius: 10px;
+//       cursor: pointer;
+//     }
+
+//     &-info {
+//       height: 100%;
+//       display: flex;
+
+//       &-picture {
+//         width: 20%;
+//         height: 100%;
+//         border: 1px solid #eee;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//       }
+
+//       &-details {
+//         width: 60%;
+//         height: 100%;
+
+//         padding: 0.5rem;
+//         border-radius: 7px;
+//       }
+
+//       &-edit {
+//         width: 5rem;
+//         margin: 0.5rem;
+//         align-self: flex-start;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//       }
+
+//       &-join {
+//         margin-top: 0.3rem;
+//         width: 2.2rem;
+//         height: 1.5rem;
+//         padding: 0.3rem;
+//         background-color: #ef4b4b;
+//         border-radius: 5px;
+//         cursor: pointer;
+//         & > * {
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .edit {
+//   width: 2rem;
+//   height: 1.2rem;
+//   background-color: #ef4b4b;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 3px;
+//   & > * {
+//     text-decoration: none;
+//     color: white;
+//   }
+// }
+
+// .delete {
+//   width: 1rem;
+//   height: 1rem;
+//   border: 1px solid #eee;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 100%;
+//   cursor: pointer;
+//   & > * {
+//     text-decoration: none;
+//     color: #525252;
+//   }
+// }

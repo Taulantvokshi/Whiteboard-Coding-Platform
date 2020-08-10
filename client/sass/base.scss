@@ -1,0 +1,68 @@
+// font-family: 'Ubuntu', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+//colors
+
+$bp-largest: 87.8em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// body {
+//   font-size: 10px;
+//
+// }
+
+html {
+  // font-family: Ubuntu, sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  // @media only screen and (max-width: $bp-largest) {
+  //   font-size: 12px;
+  // }
+}
+
+.upload-input {
+  display: none;
+
+  &__button {
+    width: 8rem;
+    height: 2.2rem;
+    border: 2px solid #ec8f6a;
+    border-radius: 7px;
+    padding: 0.3rem;
+    cursor: pointer;
+    // &:hover {
+    //   box-shadow: 0 0.4rem 0.5rem rgba(black, 0.1);
+    // }
+
+    &--label {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #696464;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.image-format {
+  width: 3rem;
+  height: 3rem;
+
+  & > * {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0.4rem 0.5rem rgba(black, 0.1);
+  }
+}

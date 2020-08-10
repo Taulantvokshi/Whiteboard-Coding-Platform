@@ -1,0 +1,31 @@
+.event-container {
+  background-color: #f6f7f8;
+  display: grid;
+
+  grid-template-rows:
+    minmax(50vh, min-content) minmax(min-content, 25rem) minmax(
+      min-content,
+      35rem
+    )
+    minmax(min-content, 45rem);
+
+  grid-template-columns:
+    [full-start]minmax(10px, 1fr) [center-start] repeat(
+      9,
+      [col-start] minmax(min-content, 120px) [col-end]
+    )
+    [center-end] minmax(10px, 1fr) [full-end];
+
+  @media only screen and (max-width: 937px) {
+    grid-template-rows:
+      minmax(50vh, min-content) minmax(min-content, 25rem) minmax(
+        37rem,
+        min-content
+      )
+      minmax(min-content, 35rem);
+  }
+
+  //   @media only screen and (max-width: 549px) {
+  //     grid-column: center-start / center-end;
+  //  }
+}

@@ -1,0 +1,19 @@
+.web-title {
+  font-size: 4rem;
+  color: white;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+  }
+}
+.web-subtitle {
+  font-size: 2rem;
+  color: white;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.5rem;
+  }
+}
+
+.logo-text {
+  text-decoration: none;
+  color: black;
+}

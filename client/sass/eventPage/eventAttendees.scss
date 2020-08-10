@@ -1,0 +1,80 @@
+.event-attendees {
+  padding: 2rem;
+  grid-column: center-start / col-end 6;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  border-radius: 7px;
+
+  @media only screen and (max-width: 937px) {
+    grid-column: center-start / center-end;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    margin-top: 3rem;
+    height: 100%;
+  }
+  @media only screen and (max-width: 555px) {
+    height: 90%;
+  }
+
+  &_info {
+    height: 4rem;
+    border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    & > h2 {
+      font-size: 1.6rem;
+      font-family: 'Kanit', sans-serif;
+    }
+    &-link {
+      height: 1.3rem;
+      border-bottom: 2px solid #eeeeee;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+      & > * {
+        font-size: 1rem;
+      }
+    }
+  }
+  &_people {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 8rem));
+    grid-gap: 1rem;
+    justify-content: flex-start;
+    &__single {
+      padding: 1rem;
+      width: 9rem;
+      height: 10rem;
+      background-color: #f6f7f8;
+      //box-shadow: 0 0.1rem 1rem rgba(black, 0.1);
+      border-radius: 7px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &--image {
+        box-shadow: 0 0.1rem 1rem rgba(black, 0.1);
+        width: 4.2rem;
+        height: 4.2rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        & > * {
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+          object-fit: cover;
+        }
+      }
+      &--userInfo {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
