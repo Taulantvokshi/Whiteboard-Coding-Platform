@@ -9,3 +9,5 @@ yarn-error.log
 .env
 .github
 .vscode
+0.bundle.js
+0.bundle.js.map
