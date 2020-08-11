@@ -274,9 +274,7 @@ export const host = (data) => {
 export const autocompliteThunk = (input) => {
   return async (dispatch) => {
     try {
-      const locations = await axios.get(
-        `https://api.mapbox.com/geocoding/v5/mapbox.places/${input}.json?access_token=pk.eyJ1IjoidGF1bGFudHVzIiwiYSI6ImNqeWhseGxicDAxMTMzY25yYzEzajMydmUifQ.dv9xnFpZeDe0aAi5yC3H2Q`
-      )
+      const locations = await axios.get('Mapbox key')
       dispatch(places(locations.data.features))
     } catch (error) {
       console.error(error)
